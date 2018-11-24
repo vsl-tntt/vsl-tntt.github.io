@@ -1,0 +1,245 @@
+.hidden.menu 
+{
+      display: none;
+}
+
+.masthead.segment {
+  min-height: 700px;
+  padding: 1em 0em;
+}
+.masthead .logo.item img {
+  margin-right: 1em;
+}
+.masthead .ui.menu .ui.button {
+  margin-left: 0.5em;
+}
+.masthead h1.ui.header {
+  margin-top: 2.75em;
+  margin-bottom: 0em;
+  font-size: 4em;
+  font-weight: normal;
+}
+.masthead h2 {
+  font-size: 1.7em;
+  font-weight: normal;
+}
+
+.ui.vertical.stripe {
+  padding: 8em 0em;
+}
+.ui.vertical.stripe h3 {
+  font-size: 2em;
+}
+.ui.vertical.stripe .button + h3,
+.ui.vertical.stripe p + h3 {
+  margin-top: 3em;
+}
+.ui.vertical.stripe .floated.image {
+  clear: both;
+}
+.ui.vertical.stripe p {
+  font-size: 1.33em;
+}
+.ui.vertical.stripe .horizontal.divider {
+  margin: 3em 0em;
+}
+
+.quote.stripe.segment {
+  padding: 0em;
+}
+.quote.stripe.segment .grid .column {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.footer.segment {
+  padding: 1.5em 0em;
+}
+
+.secondary.pointing.menu .toc.item {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .ui.fixed.menu {
+    display: none !important;
+  }
+  .secondary.pointing.menu .item,
+  .secondary.pointing.menu .menu {
+    display: none;
+  }
+  .secondary.pointing.menu .toc.item {
+    display: block;
+  }
+  .masthead.segment {
+    min-height: 350px;
+  }
+  .masthead h1.ui.header {
+    font-size: 2em;
+    margin-top: 1.5em;
+  }
+  .masthead h2 {
+    margin-top: 0.5em;
+    font-size: 1.5em;
+  }
+
+  .title-img > h1 {
+    font-size: 60% !important;
+  }
+
+  #VSL-vid{
+    border-width:0;
+    width: 100%;
+    height: 500px;
+  }
+}
+
+.ui.inverted.vertical.masthead.center.aligned.segment{
+  background-color:#FFD18C;
+  background-image:url(images/VSL_group_picture.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.ui.large.secondary.inverted.pointing.menu{
+  border-style:none;
+  margin-right: 20em;
+}
+
+.ui.large.top.fixed.hidden.menu{
+  color:#42AEFF;
+}
+
+#copyright{
+  font-size: .75em;
+  margin-left:10em;
+}
+
+.back-to-top {
+  display: none;
+  width: 60px;
+  height: 60px;
+  text-indent: -9999px;
+  position: fixed;
+  z-index: 999;
+  right: 20px;
+  bottom: 20px;
+  background: url("images/navigate-up-arrow.png") no-repeat center 43%;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
+.item{
+  font-size: 16px;
+}
+
+.logo{
+  width: 15%;
+  height: auto;
+  float: left;
+  z-index: 1000;
+  margin-left: 4em;
+  position: relative;
+}
+
+
+.Nganh_info{
+  font-size:3em;
+  margin-top: -.5em;
+}
+
+.ui.avatar.image{
+  width:5em;
+  height:auto;
+}
+
+.alignment{
+  text-align:center;
+  width:75%;
+  padding:15px 15px;
+  font-size:0.5em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#strip1{
+  background-color:#BDEDAF;
+  display: table;
+}
+
+#strip2{
+  background-color:#7EC1FC;
+  display: table;
+}
+
+#strip3{
+  background-color:#F1F176;
+  display: table;
+}
+
+#strip4{
+  background-color:#AB9474;
+  display: table;
+}
+
+#strip5{
+  background-color:#E47272;
+  display: table;
+}
+
+.title-img {
+  height: 5.5em;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  display: block;
+  text-align: center;
+}
+
+.title-img > h1 {
+  font-size: 4em;
+  color: #fdf9ef;
+  font-family: "kulturista-web", sans-serif;
+  text-transform: uppercase;
+  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  display: inline;
+  z-index: 3000;
+  line-height: 86px;
+  padding-bottom: 10px;
+  padding-top: 16px;
+}
+
+.title-img > h2 {
+  font-size: 3em;
+  color: #EA7259;
+  text-transform: uppercase;
+}
+
+#nganh:hover{
+  opacity: .5;
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1080px){
+  .title-img > h1 {
+    font-size: 100% !important;
+  }
+
+  #VSL-vid{
+    border-width:0;
+    width: 80%;
+    height: 480px;
+  }
+}
+
+@media only screen and (min-width: 1081px) and (max-width: 2560px) and (orientation: landscape){
+  .title-img > h1 {
+    font-size: 100% !important;
+  }
+
+  #VSL-vid{
+    border-width:0;
+    width: 80%;
+    height: 720px;
+  }
+}

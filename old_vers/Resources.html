@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <!-- Site Properties -->
+  <title>Resources - Đoàn Thiếu Nhi Thánh Thể Vinh Sơn Liêm</title>
+  <link rel="stylesheet" type="text/css" href="dist/components/reset.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/site.css">
+
+  <link rel="stylesheet" type="text/css" href="dist/components/container.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/grid.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/header.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/image.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/menu.css">
+
+  <link rel="stylesheet" type="text/css" href="dist/components/divider.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/dropdown.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/segment.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/button.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/list.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/icon.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/sidebar.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/transition.css">
+
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" type="text/css" href="Resources.css">
+  <link rel="icon" href="images/VSL_LOGO.png">
+
+  <script src="assets/library/jquery.min.js"></script>
+  <script src="dist/components/visibility.js"></script>
+  <script src="dist/components/sidebar.js"></script>
+  <script src="dist/components/transition.js"></script>
+  <script>
+  $(document)
+    .ready(function() {
+
+      // fix menu when passed
+      $('.masthead')
+        .visibility({
+          once: false,
+          onBottomPassed: function() {
+            $('.fixed.menu').transition('fade in');
+          },
+          onBottomPassedReverse: function() {
+            $('.fixed.menu').transition('fade out');
+          }
+        })
+      ;
+
+      // create sidebar and attach to menu open
+      $('.ui.sidebar')
+        .sidebar('attach events', '.toc.item')
+      ;
+
+    })
+  ;
+  </script>
+</head>
+
+<body>
+
+<!-- Following Menu -->
+<div class="ui large top fixed hidden menu">
+  <div class="ui container">
+    <div class="right menu">
+    <a class="item" href="index.html">Home</a>
+    <a class="item" href="About_Us.html">About Us</a>
+    <a class="item" href="Calendars.html">Calendars</a>
+    <a class="item" href="Contacts.html">Contacts</a>
+    <a class="active item">Resources</a>
+    </div>
+  </div>
+</div>
+
+<!-- Sidebar Menu -->
+<div class="ui vertical inverted sidebar menu">
+  <a class="item" href="index.html">Home</a>
+  <a class="item" href="About_Us.html">About Us</a>
+  <a class="item" href="Calendars.html">Calendars</a>
+  <!--<a class="item" href="Contacts.html">Contacts</a>-->
+  <a class="active item">Resources</a>
+</div>
+
+<!-- Page Contents -->
+<div class="pusher">
+  <div class="ui inverted vertical masthead center aligned segment" style="padding-top: 0em;">
+  <a href="index.html"><img src="images/VSLOGO2.png" class="logo"></a>
+    <div class="ui container" style="opacity: .7; background-color: white; margin-left: 0 !important; margin-right: 0 !important;">
+      <div class="ui large secondary inverted pointing menu">
+        <a class="toc item" style="color: black !important; margin-left: 10em;">
+          <i class="sidebar icon"></i>
+        </a>
+
+        <div class="right item">
+          <a class="item" href="index.html" style="color: black !important;">Home</a>
+          <a class="item" href="About_Us.html" style="color: black !important;">About Us</a>
+          <a class="item" href="Calendars.html" style="color: black !important;">Calendars</a>
+          <a class="item" href="Contacts.html" style="color: black !important;">Contacts</a>
+          <a class="active item" style="color: black !important; border-color: black;">Resources</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui text container">
+      <h1 class="ui inverted header">
+        <a><img src="images/Resources.png" alt="Calligraphy Fonts" style="width:100%"></a>
+      </h1>
+      <h2 id="moto">Học Mà Chơi, Chơi Mà Học</h2>
+    </div>
+
+  </div>
+
+<!-- START OF CONTENT LOADOUT -->
+
+  <!-- GOSPEL DIV THAT GO TO USCCB ONCLICK-->
+  <section>
+    <div class="title-img" style="background: url('images/IMG_8100.jpg') 50% 0 repeat fixed; background-size:cover; padding-top: 17.5em; height: 720px;">
+      <div class="ui text container">
+        <a href="http://usccb.org/bible/readings/" target="blank">
+          <img src="images/gospel-title.png" alt="Calligraphy Fonts" id="title">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MORSE DIV THAT LOAD UP ONCLICK MORSE INFO PIC -->
+  <section>
+    <div class="title-img" style="background: url('http://cdn.pcwallart.com/images/sky-wallpaper-3.jpg') 50% 0 repeat fixed; background-size:cover; padding-top: 17.5em; height: 720px;">
+        <button onclick="myResources(1)" style="border-style: none; background-color: transparent;">
+          <img src="images/morse-title.png" alt="Calligraphy Fonts" id="title">
+        </button>
+    </div>
+  </section>
+
+  <!-- SEMAPHORE DIV THAT LOAD UP ONCLICK SEMAPHORE INFO PIC -->
+  <section>
+    <div class="title-img" style="background: url('images/Blue_Ocean_Waves.jpg') 50% 0 repeat fixed; background-size:cover; padding-top: 17.5em; height: 720px;">
+      <button onclick="myResources(0)" style="border-style: none; background-color: transparent;">
+        <img src="images/semaphore-title.png" alt="Calligraphy Fonts" id="title">
+      </button>
+    </div>
+  </section>
+
+  <!-- KNOTS DIV THAT DIRECT TO A SITE THAT TEACH KNOTS -->
+  <section>
+    <div class="title-img" style="background: url('http://thedirtonwater.com/wp-content/uploads/2015/05/7015829-spring-grass-wallpaper.jpg') 50% 0 repeat fixed; background-size:cover; padding-top: 15.5em; height: 720px;">
+      <div class="ui text container">
+        <a href="http://www.animatedknots.com/indexbasics.php#ScrollPoint" target="blank">
+          <img src="images/knots-title.png" alt="Calligraphy Fonts" id="title">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SONGS DIV THAT DIRECT TO A SITE THAT TEACH SONGS -->
+  <section>
+    <div class="title-img" style="background: url('images/DSC_0684.jpg') 50% 0 repeat fixed; background-size:cover; padding-top: 15.5em; height: 720px;">
+      <div class="ui text container">
+        <a href="Songs.html">
+          <img src="images/song-title.png" alt="Calligraphy Fonts" id="title">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXTRA DIV THAT LOAD UP ONCLICK EXTRA CONTENT -->
+  <section>
+    <div class="title-img" style="background: url('images/DSC_0636.jpg') 50% 0 repeat fixed; background-position: bottom; background-size:cover; padding-top: 21.5em; height: 720px;">
+        <button onclick="myResources(2)" style="border-style: none; background-color: transparent;">
+          <img src="images/Extra.png" alt="Calligraphy Fonts" id="title">
+        </button>
+    </div>
+  </section>
+
+  <!-- ANIMATION TO SCROLL DOWN ON CLICK #lit #itWasSikAFfam -->
+  <script type="text/javascript">
+    $("button").click(function() {
+      $('html,body').animate({
+          scrollTop: $("#content-box").offset().top},
+          'slow');
+    });
+  </script>
+
+  <br></br>
+
+<!-- LOAD OUT INFO -->
+  <div id="content-box">
+      <div class= "content" align="center">
+        <h1 id="topic" style="text-align: center;"></h1>
+        <p id='info' style="font-size:1.25em; font-family: Arial, Helvetica, sans-serif;"></p>
+        <img src="images/image.svg" id="pic" style="width: 90%;">
+      </div>
+  <script>
+    function myResources(num){
+      var Rec_pic = ["images/Semaphore.jpg","images/morse.gif"];
+      var Rec_title = ["SEMAPHORE", "MORSE", "EXTRA RESOURCES"];
+      var image = document.getElementById('pic');
+      var Rec_extra;
+
+      Rec_extra = "<b>Giáo Sứ Thánh Maria Goretti's website:</b><br>" + "<a href='http://smgsj.org/' target='_blank'>www.smgsj.org</a><br>" +
+                  "<br><b>Phong Trào Thiếu Nhi Thánh Thể Việt Nam tại Hoa Kỳ:</b><br>" + "<a href='http://www.tntt.org/' target='_blank'>Trung Ương</a><br>" +
+                  "<a href='https://www.facebook.com/mientay.pttnttvnhk' target='_blank'>Miền Tây</a><br>" +
+                  "<a href='http://www.tntt.org/regions/' target='_blank'>Other Regions</a><br>" +
+                  "<br><b>Các Đoàn Bạn Trong Miền Tây:</b><br>" + "<a href='http://doan-tmt.org/' target='_blank'>Đoàn Tôma Thiện - (408) 291-6280</a><br>" +
+                  "<a href='http://www.ducmelavangparish.org/hoi_doan/tntt_dunglac.html' target='_blank'>Đoàn Anrê Dũng Lạc San Jose - (408) 291-6280</a></br>" +
+                  "<a href='https://www.facebook.com/tntt.thd' target='_blank'>Đoàn Têrêsa Hài Đồng Giêsu - (408) 729-0101</a><br>" +
+                  "<a href='https://www.facebook.com/ktvsac' target='_blank'>Đoàn Kitô Vua Sacramento - (916) 383-4276</a>" +
+                  "<br><a href='http://ktv-denver.org/' target='_blank'>Đoàn Kitô Vua Colorado - (303) 431-0382</a><br>" + "Đoàn Thánh Linh Fresno - (559) 485-9467<br>" + "Đoàn Anrê Dũng Lạc Hawaii - (808) 521-1700<br>" + "Đoàn Thánh Linh Baskersfield - (661) 327-4734<br>" + "Đoàn Các Thánh Tử Đạo Việt Nam - (408) 262-8100<br>" + "Đoàn Thánh Martinô - (408) 746-3725<br>" + "Đoàn Thánh Gioan Phaolô II - (408) 715-2278";
+
+      document.getElementById("topic").innerHTML = Rec_title[num];
+
+      if(num == 2){
+        document.getElementById("info").innerHTML = Rec_extra;
+        image.src = "";
+      }else{
+        image.src = Rec_pic[num];
+        document.getElementById("info").innerHTML = "";
+      }
+    }
+  </script>
+  </div>
+<!-- FOOTER OF COPYRIGHT FRAGMENT -->
+  <div class="ui inverted vertical footer segment">
+    <div id="copyright">Copyright © 2016 Đoàn TNTT Vinh Sơn Liêm. All rights reserved. Powered by Khoa Nguyen & Dennis Bui.</div>
+  </div>
+</div>
+
+  <script src="dist/components/arrowup.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+.ui.inverted.vertical.masthead.center.aligned.segment {
+  background-image: url(images/IMG_8369.jpg);
+  background-position: center;
+
+}
+
+#title{
+  width: 100%;
+  height: auto;
+}
+
+#title:hover{
+	opacity:0.7;
+}
+
+#moto{
+	text-shadow:1px 1px 25px #000000;
+}
+
+#img{
+	width: 50%;
+	height: auto;
+	background-size: cover;
+}
+
+.logo{
+  width: 15%;
+  height: auto;
+  float: left;
+  z-index: 1000;
+  margin-left: 4em;
+  position: relative;
+}
+
+.title-img {
+  height: 360px;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  display: block;
+  text-align: center;
+}
+
+.title-img > h1 {
+  font-size: 4em;
+  color: #fdf9ef;
+  font-family: "kulturista-web", sans-serif;
+  text-transform: uppercase;
+  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  display: inline;
+  z-index: 3000;
+  line-height: 86px;
+  padding-bottom: 10px;
+}
+
+.title-img > h2 {
+	font-size: 3em;
+	color: #EA7259;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 960px) {
+	.title-img > h1 {
+		font-size: 3.4em;
+	}
+}
+
+.title-img > h1 {
+	font-size: 2.6em;
+	line-height: 1.5;
+}
+
+.in-block {
+	margin-bottom: 16px;
+}
+
+.big-text { 
+ 	font-size: 1.1em;
+}
+
+.big-text {
+  font: normal 1.4em/1.6 "proxima-nova",sans-serif;
+  letter-spacing: .07em;
+}
+
+.content {
+  max-height: 50%;
+  overflow: auto;
+  padding-top: 0em;
+  padding-bottom: 0em;
+}

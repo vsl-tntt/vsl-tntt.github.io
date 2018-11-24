@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <!-- Site Properties -->
+  <title>Contacts - Đoàn Thiếu Nhi Thánh Thể Vinh Sơn Liêm</title>
+  <link rel="stylesheet" type="text/css" href="dist/components/reset.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/site.css">
+
+  <link rel="stylesheet" type="text/css" href="dist/components/container.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/grid.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/header.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/image.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/menu.css">
+
+  <link rel="stylesheet" type="text/css" href="dist/components/divider.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/dropdown.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/segment.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/button.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/list.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/icon.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/sidebar.css">
+  <link rel="stylesheet" type="text/css" href="dist/components/transition.css">
+
+  <link rel="stylesheet" type="text/css" href="Contacts.css">
+  <link rel="icon" href="images/VSL_LOGO.png">
+
+  <script src="assets/library/jquery.min.js"></script>
+  <script src="dist/components/visibility.js"></script>
+  <script src="dist/components/sidebar.js"></script>
+  <script src="dist/components/transition.js"></script>
+  <script>
+  $(document)
+    .ready(function() {
+
+      // fix menu when passed
+      $('.masthead')
+        .visibility({
+          once: false,
+          onBottomPassed: function() {
+            $('.fixed.menu').transition('fade in');
+          },
+          onBottomPassedReverse: function() {
+            $('.fixed.menu').transition('fade out');
+          }
+        })
+      ;
+
+      // create sidebar and attach to menu open
+      $('.ui.sidebar')
+        .sidebar('attach events', '.toc.item')
+      ;
+
+    })
+  ;
+  </script>
+</head>
+
+<body>
+<!-- Following Menu -->
+<div class="ui large top fixed hidden menu">
+  <div class="ui container" style="height: 3em; opacity: 1;">
+    <div class="right menu">
+    <a class="item" href="index.html">Home</a>
+    <a class="item" href="About_Us.html">About Us</a>
+    <a class="item" href="Calendars.html">Calendars</a>
+    <a class="active item" href="Contacts.html">Contacts</a>
+    <a class="item" href="Resources.html">Resources</a>
+    </div>
+  </div>
+</div>
+
+<!-- Sidebar Menu -->
+<div class="ui vertical inverted sidebar menu">
+  <a class="item" href="index.html">Home</a>
+  <a class="item" href="About_Us.html">About Us</a>
+  <a class="item" href="Calendars.html">Calendars</a>
+  <a class="active item" href="Contacts.html">Contacts</a>
+  <a class="item" href="Resources.html">Resources</a>
+</div>
+
+<!-- Page Contents -->
+<div class="pusher">
+  <div class="ui inverted vertical masthead center aligned segment" style="padding-top:0em;">
+    <a href="index.html"><img src="images/VSLOGO2.png" class="logo"></a>
+    <div class="ui container" style="opacity: .7; background-color:white; margin-left: 0 !important; margin-right: 0 !important;">
+      <div class="ui large secondary inverted pointing menu">
+        <a class="toc item" style="color: black !important; margin-left: 10em;">
+          <i class="sidebar icon"></i>
+        </a>
+
+        <div class="right item">
+          <a class="item" href="index.html" style="color: black !important;">Home</a>
+          <a class="item" href="About_Us.html" style="color: black !important;">About Us</a>
+          <a class="item" href="Calendars.html" style="color: black !important;">Calendars</a>
+          <a class="active item" href="Contacts.html" style="color: black !important; border-color: black;">Contacts</a>
+          <a class="item" href="Resources.html" style="color: black !important;">Resources</a>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="ui text container">
+      <h1 class="ui inverted header">
+        <a href="#popup1">        
+          <img onclick="myHuynhTruong(0)" src="images/priest.svg" alt="Cha Tuyên Úy" class="ui avatar image">
+        </a>
+        <a href="#popup1">        
+          <img onclick="myHuynhTruong(1)" src="images/nun.svg" alt="Sơ Tuyên Úy" class="ui avatar image">
+        </a>
+        <br></br>
+        <a href="#popup1">
+          <img onclick="myHuynhTruong(2)" src="images/HT-gurl.png" alt="Đoàn Trưởng" class="ui avatar image">
+        </a>
+        <a href="#popup1">
+          <img onclick="myHuynhTruong(3)" src="images/HT-gurl.png" alt="Đoàn Phó Quảng Trị" class="ui avatar image">
+        </a>
+        <a href="#popup1">
+          <img onclick="myHuynhTruong(4)" src="images/HT-boi.png" alt="Đoàn Phó Nghiên Huấn" class="ui avatar image">
+        <a id="btn" href="#popup1">
+          <img onclick="myHuynhTruong(5)" src="images/HT-gurl.png" alt="Thư Ký" class="ui avatar image">
+        </a>
+        <a href="#popup1">
+          <img onclick="myHuynhTruong(6)" src="images/HT-gurl.png" alt="Thủ Qũy" class="ui avatar image">
+        </a>
+        <br></br>
+        <a href="#popup1">
+          <img onclick="myHuynhTruong(7)" src="images/HT-gurl.png" alt="Ngành Trưởng Ngành Ấu" class="ui avatar image">
+        </a>
+        <a href="#popup1">
+          <img onclick="myHuynhTruong(8)" src="images/HT-gurl.png" alt="Ngành Trưởng Ngành Thiếu" class="ui avatar image">
+        </a>
+        <a href="#popup1">
+          <img onclick="myHuynhTruong(9)" src="images/HT-boi.png" alt="Ngành Trưởng Ngành Nghĩa" class="ui avatar image">
+        </a>
+        <a href="#popup1">
+          <img onclick="myHuynhTruong(10)" src="images/HT-boi.png" alt="Ngành Trưởng Hiệp Sỹ" class="ui avatar image">
+        </a>
+      </h1>
+    </div>
+  </div>
+
+    <div class="popup" style="margin-top:1.5em; margin-bottom:1.5em;">
+      <h2 id="info"></h2>
+      <div class="content">
+        <p id ="name"></p>
+        <p id ="fone"></p>
+        <img src="images/image.svg" alt="Photo can't be loaded" id="pic">
+      </div>
+    </div>
+
+  <script>
+    function myHuynhTruong(num){
+      var HT_Name = ["Lm. Antôn Nguyễn Duy Tường",
+                    "Sơ Bernadette Nguyễn Hoàng Yến",
+                    "Trưởng Têrêsa Lưu Ngọc Lệ",
+                    "Trưởng Maria Nguyễn Lucy",
+                    "Trưởng Đaminh Phan Long", 
+                    "Trưởng Anna Ngô Oanh-Châu Annie", 
+                    "Trưởng Maria Nguyễn Hằng", 
+                    "Trưởng Thêrêsa Võ Vivian",
+                    "Trưởng Maria Phạm Vi",
+                    "Trưởng Giuse Đoàn Đức",
+                    "Trưởng Giuse Đoàn Charles Trí", 
+                    "Trưởng Dominico Bùi Dennis", 
+                    "Trưởng Giuse Nguyễn Thanh Anh Khoa"];
+
+      var HT_Info = ["Cha Tuyên Úy",
+                    "Sơ Trợ Úy",
+                    "Đoàn Trưởng",
+                    "Đoàn Phó Quản Trị",
+                    "Đoàn Phó Nghiên Huấn",
+                    "Thư Ký",
+                    "Thủ Qũy",
+                    "Ngành Trưởng Ngành Ấu",
+                    "Ngành Trưởng Ngành Thiếu",
+                    "Ngành Trưởng Ngành Nghĩa",
+                    "Ngành Trưởng Hiệp Sỹ",
+                    "Website Developer",
+                    "Website Developer"];
+
+      var HT_pic = ["images/ChaCuong.jpg", //Cha Tuyen Uy
+                    "images/SoYen.jpg", //So Tuyen Uy
+                    "images/DSC_0077.jpg", //Doan Truong
+                    "images/ChiLucy.jpg", //Doan Pho QT
+                    "images/AnhLong.jpg", //Doan Pho NH
+                    "images/ChiAnnie.jpg", //Thu Ky
+                    "images/ChiHang.jpg", //Thu Quy
+                    "images/ChiVivian.jpg", //AU
+                    "images/DSC_0388.jpg", //THIEU
+                    "images/AnhDuke.jpg", //NGHIA
+                    "images/AnhCharles.jpg", //HIEP SI
+                    "images/DSC_0094.jpg", //DENNIS
+                    "images/DSC_0071.jpg"]; //KHOA
+
+      var HT_fone = ["408-363-2300 (ask for Father Anthony)",
+                    "408-363-2300 (ask for Sister Yen)",
+                    "408-387-9783<br>ngocleluu@gmail.com", 
+                    "lucianguyen91@gmail.com", 
+                    "longphan68@yahoo.com", 
+                    "annieotran@yahoo.com", 
+                    "mhnguyen512@yahoo.com", 
+                    "vivian_vo95@yahoo.com",
+                    "vipham229@yahoo.com",
+                    "mrducdoan@gmail.com", 
+                    "ctrid22@hotmail.com", 
+                    "dennisbuioff@gmail.com", 
+                    "henrykhoanguyen@gmail.com"];
+
+      var image = document.getElementById('pic');
+      document.getElementById("info").innerHTML = HT_Info[num];
+      document.getElementById("name").innerHTML = HT_Name[num];
+      document.getElementById("fone").innerHTML = HT_fone[num];
+      image.src = HT_pic[num];
+    }
+  </script>
+
+<!-- FOOTER OF COPYRIGHT FRAGMENT -->
+  <div class="ui inverted vertical footer segment">
+    <div id="copyright">Copyright © 2016 Đoàn TNTT Vinh Sơn Liêm. All rights reserved. Powered by Dennis Bui
+        <a href="#popup1">
+          <img onclick="myHuynhTruong(11)" src="images/Dennis-dev.png" alt="Trưởng Dennis Bui - Web Developer" class="ui avatar image">
+        </a>
+          & Khoa Nguyen.
+        <a href="#popup1">
+          <img onclick="myHuynhTruong(12)" src="images/khoa-dev.png" alt="Trưởng Khoa Nguyen - Web Developer" class="ui avatar image">
+        </a>
+    </div>
+  </div>
+</div>
+
+  <script src="dist/components/arrowup.js"></script>
+</body>
+
+</html>

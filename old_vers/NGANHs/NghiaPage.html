@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <!-- Site Properties -->
+  <title>Ngành Nghĩa</title>
+  <link rel="stylesheet" type="text/css" href="../dist/components/reset.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/site.css">
+
+  <link rel="stylesheet" type="text/css" href="../dist/components/container.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/grid.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/header.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/image.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/menu.css">
+
+  <link rel="stylesheet" type="text/css" href="../dist/components/divider.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/dropdown.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/segment.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/button.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/list.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/icon.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/sidebar.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/transition.css">
+  <link rel="stylesheet" type="text/css" href="../dist/components/card.css">
+
+  <link rel="stylesheet" type="text/css" href="NghiaPage.css">
+  <link rel="icon" href="../images/VSL_LOGO.png">
+
+  <script src="../assets/library/jquery.min.js"></script>
+  <script src="../dist/components/visibility.js"></script>
+  <script src="../dist/components/sidebar.js"></script>
+  <script src="../dist/components/transition.js"></script>
+  <script>
+  $(document)
+    .ready(function() {
+
+      // fix menu when passed
+      $('.masthead')
+        .visibility({
+          once: false,
+          onBottomPassed: function() {
+            $('.fixed.menu').transition('fade in');
+          },
+          onBottomPassedReverse: function() {
+            $('.fixed.menu').transition('fade out');
+          }
+        })
+      ;
+
+      // create sidebar and attach to menu open
+      $('.ui.sidebar')
+        .sidebar('attach events', '.toc.item')
+      ;
+
+    })
+  ;
+  </script>
+</head>
+
+<body>
+
+<!-- Following Menu -->
+<div class="ui large top fixed hidden menu">
+  <div class="ui container" style="height: 3em; opacity: 1;">
+    <div class="right menu">
+    <a class="item" href="../index.html">Home</a>
+    <a class="item" href="../About_Us.html">About Us</a>
+    <a class="item" href="../Calendars.html">Calendars</a>
+    <a class="item" href="../Contacts.html">Contacts</a>
+    <a class="item" href="../Resources.html">Resources</a>
+    </div>
+  </div>
+</div>
+
+<!-- Sidebar Menu -->
+<div class="ui vertical inverted sidebar menu">
+  <a class="item" href="../index.html">Home</a>
+  <a class="item" href="../About_Us.html">About Us</a>
+  <a class="item" href="../Calendars.html">Calendars</a>
+  <a class="item" href="../Contacts.html">Contacts</a>
+  <a class="item" href="../Resources.html">Resources</a>
+</div>
+
+<!-- Page Contents -->
+<div class="pusher">
+  <div class="ui inverted vertical masthead center aligned segment" style="padding-top:0em;">
+    <a href="index.html"><img src="../images/VSLOGO2.png" class="logo"></a>
+    <div class="ui container" style="opacity: .7; background-color:white; margin-left: 0 !important; margin-right: 0 !important;">
+      <div class="ui large secondary inverted pointing menu">
+        <a class="toc item" style="color:black !important; margin-left: 10em;">
+          <i class="sidebar icon"></i>
+        </a>
+        
+        <div class="right item">
+          <a class="item" href="../index.html" style="color: black !important;">Home</a>
+          <a class="item" href="../About_Us.html" style="color: black !important;">About Us</a>
+          <a class="item" href="../Calendars.html" style="color: black !important;">Calendars</a>
+          <a class="item" href="../Contacts.html" style="color: black !important;">Contacts</a>
+          <a class="item" href="../Resources.html" style="color: black !important;">Resources</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h1 id="title">Ngành Nghĩa Updates<br>Cập Nhật Mới Của Ngành Nghĩa</h1>
+  </br>
+
+  <div class="content box">
+    <div class="ui four column grid" id="dis">2</div>
+  </div><!-- div that hold cards infomation-->
+  <script type="text/javascript" src="thieuNhiData.js"></script>
+
+  <br>
+<!-- FOOTER OF COPYRIGHT FRAGMENT -->
+  <div class="ui inverted vertical footer segment">
+    <div id="copyright">Copyright © 2016 Đoàn TNTT Vinh Sơn Liêm. All rights reserved. Powered by Khoa Nguyen & Dennis Bui.</div>
+  </div>
+</div>
+
+  <script src="../dist/components/arrowup.js"></script>
+
+</body>
+
+</html>
