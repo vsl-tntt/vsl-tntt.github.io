@@ -4679,22 +4679,27 @@ input, select, textarea {
 
 	}
 	#vsl-video{
-		width: 720px;
-		height: 480px;
+		width: 840px;
+		height: 473px;
 	}
 	/* Large Screen */
 @media screen and (max-width: 1280px) {
 	#vsl-video{
-		width: 720px;
-		height: 100%;
+	/**************************
+		original width of video
+		width: 560px;
+		height: 315px;
+	888************************/
+		width: 672px;
+		height: 378px;
 	}
 }
 
 /* Medium Screen */
 @media screen and (max-width: 980px) {
 	#vsl-video{
-		width: 100%;
-		height: 100%;
+		width: 373px;
+		height: 210px;
 	}
 }
 
